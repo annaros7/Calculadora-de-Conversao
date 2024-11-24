@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Conversão</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <section>
+            <div class="faixa_alta"></div>
+        </section>
+
+        <section>
+            <h3 class="titulo">Calculadora de Conversão</h3>
+        </section>
+    </header>
+
+    <main>
+        <section class="conteudo">
+            <input class="valor1" id="valor1" type="number" value="preço">
+            <input class="valor2" id="valor2" type="number" value="gramatura">
+            <input class="gerador" id="gerador" type="button" value="Gerar" onclick="calcular()">
+        </section>
+        <div id="res" class="res">Resultado</div>
+    </main>
+
+    <footer>
+        <p>&copy; Anna Rossete</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

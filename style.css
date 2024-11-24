@@ -1,0 +1,106 @@
+body {
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.faixa_alta {
+    background-color: darkgrey;
+    height: 5rem;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 3rem;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.valor1 {
+    height: 5rem;
+    width: 20rem;
+    border-radius: 2rem;
+    border: none;
+
+    box-shadow: rgb(99, 99, 99) 3px 3px 10px;
+}
+
+.valor1:hover {
+    background-color: rgb(206, 206, 206);
+    transition: all .2s;
+}
+
+.valor2 {
+    height: 5rem;
+    width: 20rem;
+    border-radius: 2rem;
+    border: none;
+
+    box-shadow: rgb(99, 99, 99) 3px 3px 10px;
+
+    outline: none;
+}
+
+.valor2:hover {
+    background-color: rgb(206, 206, 206);
+    transition: all .2s;
+}
+
+.gerador {
+    height: 3rem;
+    width: 10rem;
+    border-radius: 2rem;
+    border: none;
+
+    box-shadow: rgb(99, 99, 99) 3px 3px 10px;
+}
+
+.gerador:hover {
+    background-color: rgb(168, 168, 168);
+    transition: all .2s;
+}
+
+.res {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 2rem;
+}
+
+.conteudo:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+/* TIRAR AS SETAS DO INPUT */
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+
+}
+
+/* TIRAR AS SETAS DO INPUT */
+
+footer
+{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
