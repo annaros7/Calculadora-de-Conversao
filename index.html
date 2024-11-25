@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Conversão</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="imagex/png" href="img/icons8-matemática-16.png">
+    
 </head>
 <body>
     <header>
@@ -13,14 +15,15 @@
         </section>
 
         <section>
-            <h3 class="titulo">Calculadora de Conversão</h3>
+            <h3 id="titulo">Calculadora de Conversão</h3>
+            <p id="texto2">Converta o valor de um produto em gramas para o valor do quilo.</p>
         </section>
     </header>
 
     <main>
         <section class="conteudo">
-            <input class="valor1" id="valor1" type="number" value="preço">
-            <input class="valor2" id="valor2" type="number" value="gramatura">
+            <input class="valor1" id="valor1" type="number" value="preço" placeholder="Preço atual">
+            <input class="valor2" id="valor2" type="number" value="gramatura" placeholder="Valor em gramas">
             <input class="gerador" id="gerador" type="button" value="Gerar" onclick="calcular()">
         </section>
         <div id="res" class="res">Resultado</div>
