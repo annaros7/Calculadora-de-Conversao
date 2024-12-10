@@ -16,7 +16,7 @@
 
         <section>
             <h3 id="titulo">Calculadora de Conversão</h3>
-            <p id="texto2">Converta o valor de um produto em gramas para o valor do quilo.</p>
+            <p id="texto2">Converta para o valor do quilo, um produto precificado em gramas.</p>
         </section>
     </header>
 
@@ -26,7 +26,10 @@
             <input class="valor2" id="valor2" type="number" value="gramatura" placeholder="Valor em gramas">
             <input class="gerador" id="gerador" type="button" value="Gerar" onclick="calcular()">
         </section>
+        <section class="resultGeral">
         <div id="res" class="res">Resultado</div>
+        <button name="Copy" id="copy" onclick="copyText()">Copiar</button>
+        </section>
     </main>
 
     <footer>
