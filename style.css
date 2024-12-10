@@ -1,11 +1,20 @@
+:root {
+    --backPrinc: rgb(62, 62, 62);
+    --backFaixas: rgb(92, 92, 92);
+    --backBut: rgb(168, 168, 168);
+    --backSombra: rgb(31, 31, 31) 3px 3px 10px;
+}
+
+
+
 body {
-    background-color: gray;
+    background-color: var(--backPrinc);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
 
 .faixa_alta {
-    background-color: darkgrey;
+    background-color: rgb(92, 92, 92);
     height: 5rem;
 }
 
@@ -31,10 +40,10 @@ main {
     margin: 5rem;
     padding: 8rem;
 
-    background-color: darkgray;
+    background-color: var(--backFaixas);
     height: 15rem;
     border-radius: 5rem;
-    box-shadow: rgb(99, 99, 99) 3px 3px 10px;
+    box-shadow: var(--backSombra);
 }
 
 .conteudo {
@@ -51,7 +60,7 @@ main {
     border-radius: 2rem;
     border: none;
 
-    box-shadow: rgb(99, 99, 99) 3px 3px 10px;
+    box-shadow: var(--backSombra);
 }
 
 .valor1:hover {
@@ -65,7 +74,7 @@ main {
     border-radius: 2rem;
     border: none;
 
-    box-shadow: rgb(99, 99, 99) 3px 3px 10px;
+    box-shadow: var(--backSombra);
 
     outline: none;
 }
@@ -81,26 +90,52 @@ main {
     border-radius: 2rem;
     border: none;
 
-    box-shadow: rgb(99, 99, 99) 3px 3px 10px;
+    background-color: var();
+    box-shadow: var(--backSombra);
 }
 
 .gerador:hover {
-    background-color: rgb(168, 168, 168);
+    background-color: rgb(112, 112, 112);
+    color: white;
     transition: all .2s;
+}
+
+.resultGeral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .res {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5rem;
+    margin: 4rem;
+    padding: 1rem;
+    width: 25rem;
 
     color: white;
     font-size: 2rem;
     
-    background-color: rgba(104, 104, 104, 0.516);
-    border-radius: 5rem;
-    box-shadow: rgb(99, 99, 99) 3px 3px 10px;
+    background-color: var(--backBut);
+    border-radius: 1.5rem;
+    box-shadow: var(--backSombra);
+}
+
+#copy {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 2rem;
+    width: 8rem;
+
+    background-color: var(--backBut);
+    box-shadow: var(--backSombra);
+    color: white;
+}
+
+#copy:hover {
+    background-color: rgb(112, 112, 112);
+    transition: all .2s;
 }
 
 .conteudo:focus, input:focus {
@@ -135,7 +170,7 @@ input::placeholder {
 
 footer
 {
-    color: white;
+    color: rgb(111, 111, 111);
     text-align: center;
     font-style: italic;
 }
